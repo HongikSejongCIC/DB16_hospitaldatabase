@@ -1,0 +1,173 @@
+﻿CREATE DATABASE `movie` CHARACTER SET utf8 COLLATE utf8_general_ci;
+use movie;
+
+
+
+
+CREATE TABLE USER_INFO(
+  USER_ID varchar(20) NOT NULL,
+  USER_PASSWORD varchar(20) NOT NULL,
+  USER_NAME varchar(10) NOT NULL,
+  USER_PHONENUMBER varchar(15) NOT NULL,
+  PRIMARY KEY (USER_ID)
+);
+
+
+
+
+
+create table MOVIE_INFO(
+M_ID INT(5) NOT NULL AUTO_INCREMENT,
+moviename varchar(20) NOT NULL,
+hallname varchar(5) not null,
+screeningtime varchar(20) not null,
+PRIMARY KEY (M_ID)
+);
+
+
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('시빌워','1관','09:00 ~ 12:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('시빌워','1관','13:00 ~ 16:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('시빌워','1관','17:00 ~ 20:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('시빌워','1관','21:00 ~ 24:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('탐정홍길동','2관','09:00 ~ 12:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('탐정홍길동','2관','13:00 ~ 16:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('탐정홍길동','2관','17:00 ~ 20:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('탐정홍길동','2관','21:00 ~ 24:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('주토피아','3관','09:00 ~ 12:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('주토피아','3관','13:00 ~ 16:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('주토피아','3관','17:00 ~ 20:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('주토피아','3관','21:00 ~ 24:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('시간이탈자','4관','09:00 ~ 12:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('시간이탈자','4관','13:00 ~ 16:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('시간이탈자','4관','17:00 ~ 20:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('시간이탈자','4관','21:00 ~ 24:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('배트맨vs슈퍼맨','5관','09:00 ~ 12:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('배트맨vs슈퍼맨','5관','13:00 ~ 16:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('배트맨vs슈퍼맨','5관','17:00 ~ 20:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('배트맨vs슈퍼맨','5관','21:00 ~ 24:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('아이언맨','6관','09:00 ~ 12:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('아이언맨','6관','13:00 ~ 16:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('아이언맨','6관','17:00 ~ 20:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('아이언맨','6관','21:00 ~ 24:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('귀향','7관','09:00 ~ 12:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('귀향','7관','13:00 ~ 16:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('귀향','7관','17:00 ~ 20:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('귀향','7관','21:00 ~ 24:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('동주','8관','09:00 ~ 12:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('동주','8관','13:00 ~ 16:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('동주','8관','17:00 ~ 20:00');
+insert into MOVIE_INFO(moviename,hallname,screeningtime) values('동주','8관','21:00 ~ 24:00');
+
+
+
+
+
+create table THEATER_INFO(
+ T_ID INT(5) NOT NULL AUTO_INCREMENT,
+ theatername varchar(10) not null,
+ location varchar(30) not null,
+ callnumber varchar(10) not null,
+ primary key (T_ID)
+);
+INSERT INTO theater_info(theatername,location,callnumber) VALUES('CGV 강남','서울시 강남구 역삼동','1544-1122');
+INSERT INTO theater_info(theatername,location,callnumber) VALUES('CGV 청담', '서울시 강남구 신사동','1544-1122');
+INSERT INTO theater_info(theatername,location,callnumber) VALUES('CGV 홍대', '서울시 마포구 동교동', '1544-1122');
+INSERT INTO theater_info(theatername,location,callnumber) VALUES('CGV 압구정', '서울시 강남구 삼성동', '1544-1122');
+INSERT INTO theater_info(theatername,location,callnumber) VALUES('CGV 강동', '서울시 강동구 성내동', '1544-1122');
+INSERT INTO theater_info(theatername,location,callnumber) VALUES('CGV 미아', '서울시 강북구 미아동', '1544-1122');
+INSERT INTO theater_info(theatername,location,callnumber) VALUES('CGV 중계', '서울시 강북구 중계동', '1544-1122');
+INSERT INTO theater_info(theatername,location,callnumber) VALUES('CGV 강변', '서울시 광진구 구로동', '1544-1122');
+INSERT INTO theater_info(theatername,location,callnumber) VALUES('CGV 군자', '서울시 광진구 군자동  ', '1544-1122');
+INSERT INTO theater_info(theatername,location,callnumber) VALUES('CGV 신도림', '서울시 구로구 구로동', '1544-1122');
+INSERT INTO theater_info(theatername,location,callnumber) VALUES('CGV 하계', '서울시 노원구 중계동', '1544-1122');
+
+
+
+CREATE TABLE SEAT_INFO(
+  S_ID INT(5) NOT NULL AUTO_INCREMENT,
+  row varchar(3) not null,
+  col varchar(3) not null,
+  primary key(S_ID)
+);
+
+insert into seat_info(row,col) values('A','1');
+insert into seat_info(row,col) values('A','2');
+insert into seat_info(row,col) values('A','3');
+insert into seat_info(row,col) values('A','4');
+insert into seat_info(row,col) values('A','5');
+insert into seat_info(row,col) values('A','6');
+insert into seat_info(row,col) values('A','7');
+insert into seat_info(row,col) values('A','8');
+insert into seat_info(row,col) values('B','1');
+insert into seat_info(row,col) values('B','2');
+insert into seat_info(row,col) values('B','3');
+insert into seat_info(row,col) values('B','4');
+insert into seat_info(row,col) values('B','5');
+insert into seat_info(row,col) values('B','6');
+insert into seat_info(row,col) values('B','7');
+insert into seat_info(row,col) values('B','8');
+insert into seat_info(row,col) values('C','1');
+insert into seat_info(row,col) values('C','2');
+insert into seat_info(row,col) values('C','3');
+insert into seat_info(row,col) values('C','4');
+insert into seat_info(row,col) values('C','5');
+insert into seat_info(row,col) values('C','6');
+insert into seat_info(row,col) values('C','7');
+insert into seat_info(row,col) values('C','8');
+insert into seat_info(row,col) values('D','1');
+insert into seat_info(row,col) values('D','2');
+insert into seat_info(row,col) values('D','3');
+insert into seat_info(row,col) values('D','4');
+insert into seat_info(row,col) values('D','5');
+insert into seat_info(row,col) values('D','6');
+insert into seat_info(row,col) values('D','7');
+insert into seat_info(row,col) values('D','8');
+insert into seat_info(row,col) values('E','1');
+insert into seat_info(row,col) values('E','2');
+insert into seat_info(row,col) values('E','3');
+insert into seat_info(row,col) values('E','4');
+insert into seat_info(row,col) values('E','5');
+insert into seat_info(row,col) values('E','6');
+insert into seat_info(row,col) values('E','7');
+insert into seat_info(row,col) values('E','8');
+insert into seat_info(row,col) values('F','1');
+insert into seat_info(row,col) values('F','2');
+insert into seat_info(row,col) values('F','3');
+insert into seat_info(row,col) values('F','4');
+insert into seat_info(row,col) values('F','5');
+insert into seat_info(row,col) values('F','6');
+insert into seat_info(row,col) values('F','7');
+insert into seat_info(row,col) values('F','8');
+insert into seat_info(row,col) values('G','1');
+insert into seat_info(row,col) values('G','2');
+insert into seat_info(row,col) values('G','3');
+insert into seat_info(row,col) values('G','4');
+insert into seat_info(row,col) values('G','5');
+insert into seat_info(row,col) values('G','6');
+insert into seat_info(row,col) values('G','7');
+insert into seat_info(row,col) values('G','8');
+insert into seat_info(row,col) values('H','1');
+insert into seat_info(row,col) values('H','2');
+insert into seat_info(row,col) values('H','3');
+insert into seat_info(row,col) values('H','4');
+insert into seat_info(row,col) values('H','5');
+insert into seat_info(row,col) values('H','6');
+insert into seat_info(row,col) values('H','7');
+insert into seat_info(row,col) values('H','8');
+
+
+
+create table TICKET_INFO(
+  TK_ID int(5) auto_increment not null,
+  U_ID varchar(20) NOT NULL,
+  M_ID INT(5) NOT NULL,
+  T_ID INT(5) NOT NULL,
+  S_ID INT(5) NOT NULL,
+  primary key(TK_ID),
+  foreign key(U_ID) references USER_INFO(USER_ID),
+  foreign key(M_ID) references MOVIE_INFO(M_ID),
+  foreign key(T_ID) references THEATER_INFO(T_ID),
+  foreign key(S_ID) references SEAT_INFO(S_ID)
+);
+
+
