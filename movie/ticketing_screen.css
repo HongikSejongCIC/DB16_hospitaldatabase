@@ -1,0 +1,54 @@
+body{
+  background-color: #EAEAEA;
+}
+#login_info {
+  text-align: center;
+  font-size: 15px;
+}
+#login_info p{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+#login_form ul{
+  list-style: none;
+}
+#div0{
+  width: 25%;
+  height:480px;
+  float:left;
+}
+#div1{
+  width: 25%;
+  height:480px;
+  float:left;
+}
+#div2{
+  width: 25%;
+  height:480px;
+  float:left;
+  text-align: center;
+}
+#div3{
+  width: 24%;
+  height:480px;
+  float:left;
+}
+#div1 select{
+  width:110px;
+}
+input[type=submit] {
+    padding:50px 20px;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+#select_button{
+   margin : auto;
+   width: 407px;
+   padding: 5%;
+}
+#select_button input{
+   font-size: 20px;
+}
